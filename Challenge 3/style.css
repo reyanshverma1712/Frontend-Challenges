@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #674baf;
+    background-image: url("/Projects/Frontend Challenges/Challenge 3/Assets/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 50px;
+}
+
+section h2 {
+    font-size:3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+}
+section button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:  #674baf;
+    width: 200px;
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.185);
+
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 50px;
+    gap: 15px;
+}
+footer a {
+    margin-top:auto;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+
+footer a:hover {
+    color: #674baf;
+    background-color: white;
+}
+@media (max-width: 1400px) {
+    body {
+        padding: 50px;
+    }
+    main {
+        gap: 50px;
+    }
+}
+@media (max-width: 1100px) {
+    body {
+        padding: 30px;
+    }
+    html {
+        font-size: 95%;
+    }
+    main {
+        flex-direction: column;
+        gap: 30px;
+        text-align:center;
+        align-items: center;
+
+    }
+    footer {
+        justify-content: center;
+    }
+    section {
+        align-items: center;
+    }
+    section h2, section p {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body{
+        padding:20px;
+        background-image: url("/Projects/Frontend Challenges/Challenge 3/Assets/bg-mobile.svg");
+    }
+    main {
+        gap: 20px;
+    }
+    html {
+        font-size: 89%;
+    }
+}
